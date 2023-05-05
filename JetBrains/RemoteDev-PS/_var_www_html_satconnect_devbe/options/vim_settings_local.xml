@@ -1,0 +1,23 @@
+<application>
+  <component name="VimJumpsSettings">
+    <jump line="33" column="27" filename="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" />
+    <jump line="18" column="28" filename="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" />
+    <jump line="19" column="23" filename="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" />
+    <jump line="20" column="23" filename="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" />
+    <jump line="21" column="0" filename="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" />
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="/var/www/html/satconnect/devbe/lib/core/src/label/SwfLabel.php" timestamp="1683273497785">
+        <mark key="&quot;" line="21" column="0" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+</application>
