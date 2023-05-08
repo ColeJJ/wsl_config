@@ -48,14 +48,12 @@ return require('packer').startup(function(use)
   use ('jiangmiao/auto-pairs')
   -- autopairs for html
   use ('alvan/vim-closetag')
-
-  -- prettier and null ls
+  -- null ls
   use('jose-elias-alvarez/null-ls.nvim')
-
   -- commenting
   use ('numToStr/Comment.nvim')
 
-  -- lsp
+  -- LSP 
   use {
      'VonHeikemen/lsp-zero.nvim',
      branch = 'v1.x',
