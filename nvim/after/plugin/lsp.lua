@@ -57,25 +57,6 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "]d", function() vim.diagnostics.goto_prev() end, opts)
 end)
 
--- require 'lspconfig'.intelephense.setup {
---     settings = {
---         intelephense = {
---             stubs = {
---                 'Core',
---                 'SPL',
---                 'imagick',
---                 'standard',
---                 'pcre',
---                 'date',
---                 'json',
---                 'ctype',
---                 'SimpleXML',
---                 'Reflection'
---             }
---         }
---     }
--- }
-
 lsp.setup()
 
 vim.diagnostic.config({
