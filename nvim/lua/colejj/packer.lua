@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", name = "catppuccin" }
   -- File Icons 
   use 'nvim-tree/nvim-web-devicons'
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- CODING
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -50,7 +51,6 @@ return require('packer').startup(function(use)
 
   -- prettier and null ls
   use('jose-elias-alvarez/null-ls.nvim')
-  use('MunifTanjim/prettier.nvim')
 
   -- commenting
   use ('numToStr/Comment.nvim')

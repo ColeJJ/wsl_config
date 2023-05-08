@@ -11,6 +11,9 @@ telescope.setup({
     defaults = {
         find_command = { 'fd', '--hidden', '--type', 'f', 'git', 'ls-files', '--exclude-standard', '--cached', '--others', '-v'},
         file_ignore_patterns = { ".git", "node_modules/" },
+        grep = {
+            ingnore_case = true
+        }
     },
     extensions = {
         fzf = {
