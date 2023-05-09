@@ -15,6 +15,11 @@ telescope.setup({
             ingnore_case = true
         }
     },
+    pickers = {
+        live_grep = {
+            theme = "dropdown",
+        }
+    },
     extensions = {
         fzf = {
             fuzzy = true,
