@@ -31,7 +31,8 @@ return require('packer').startup(function(use)
   --    'frenzyexists/aquarium-vim'
   --  })
   --  use 'sam4llis/nvim-tundra'
-  use { "catppuccin/nvim", name = "catppuccin" }
+  -- use { "catppuccin/nvim", name = "catppuccin" }
+  use { "ellisonleao/gruvbox.nvim" }
   -- File Icons 
   use 'nvim-tree/nvim-web-devicons'
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -81,4 +82,10 @@ return require('packer').startup(function(use)
        {'rafamadriz/friendly-snippets'}, -- Optional
      }
   }
+
+  -- Debugger
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "nvim-telescope/telescope-dap.nvim"
 end)

@@ -44,6 +44,7 @@ monorepo.setup({
 telescope.load_extension('fzf')
 telescope.load_extension('file_browser')
 telescope.load_extension('monorepo')
+telescope.load_extension('dap')
 
 -- mappings
 vim.keymap.set('n', '<leader>ff', function()
