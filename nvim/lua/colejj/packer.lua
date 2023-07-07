@@ -30,9 +30,13 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", name = "catppuccin" }
   use { "neanias/everforest-nvim" }
   use { "shaunsingh/nord.nvim" }
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
   -- File Icons 
-  use 'nvim-tree/nvim-web-devicons'
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use { 'nvim-tree/nvim-web-devicons' }
+  -- Nvimtree (File Explorer)
+  use { 'nvim-tree/nvim-tree.lua' }
+  -- Which-key -> window with possible key bindings 
+  use { 'folke/which-key.nvim' }
 
   -- CODING
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
