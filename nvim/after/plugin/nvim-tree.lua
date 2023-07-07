@@ -102,6 +102,13 @@ nvim_tree.setup({
 -- style
 vim.cmd([[hi NvimTreeWinSeparator guifg=#0F111A guibg=NONE]])
 
+-- Automatic closing wenn changing buffer in tree 
+vim.g.nvim_tree_auto_close = 1
+vim.cmd([[
+  autocmd BufEnter * lua if vim.api.nvim_win_get_number(0) > 1 and vim.b.previous_bufnr then vim.api.nvim_buf_delete(vim.b.previous_bufnr, { force = true }) end
+
+]])
+
 -- Keybindings
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<space>t', '<Cmd>NvimTreeToggle<CR>', opts)
